@@ -4,6 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ 
+
+
+
 .cyan {
     color: #ccffff;
 }
@@ -53,7 +57,7 @@ h6 {
     display: inline-block;
     height: auto;
     max-width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 p {
@@ -63,8 +67,15 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
-    /*background-color: #44034B;*/
+    /* background: #f05f40; */
+    background-blend-mode: exclusion;
+    /* background: linear-gradient(to bottom, rgba(0,76,122,1) 0%,rgba(18,54,94,1) 40%, rgba(0,0,0,1) 100%), url("../img/christian-nielsen-1JHzqk5oTy8-unsplash.jpg"); */
+    background: linear-gradient(to top, rgba(0,76,122,1) 0%,rgba(18,54,94,1) 40%, rgba(0,0,0,1) 100%), url("../img/averie-woodard-Frjr1uH0qRM-unsplash.jpg");
+    background-position: 50% 80%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .bg-dark {
@@ -74,6 +85,10 @@ p {
 
 .text-faded {
     color: rgba(255,255,255,.7);
+}
+
+.text-grey {
+    color: rgba(20,20,20,1);
 }
 
 section {
@@ -191,7 +206,9 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-blend-mode: exclusion;
+    background: linear-gradient(to top, rgba(0,76,122,1) 0%,rgba(18,54,94,1) 40%, rgba(0,0,0,1) 100%), url("../img/nathan-anderson-KvgB81s4dF0-unsplash.jpg");
+    /* background: linear-gradient(to bottom, rgba(22,27,61,1) 30%, rgba(18,54,94,1) 80%, rgba(0,76,122,1) 100%), url("../img/nathan-anderson-KvgB81s4dF0-unsplash.jpg"); */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -215,12 +232,11 @@ header .header-content .header-content-inner h1 {
     text-transform: uppercase;
 }
 
-header .header-content .header-content-inner h2 {
+header .header-content .header-content-inner .ss {
     font-family: 'Lato', sans-serif;
-    font-weight: 80;
-    letter-spacing: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
+    font-weight: 420;
+    font-size: 18px;
+    letter-spacing: 8px;
     text-transform: uppercase;
 }
 
@@ -349,6 +365,7 @@ header .header-content .header-content-inner p {
 
 .text-primary {
     color: #f05f40;
+    /* color: rgba(50,126,172,1); */
 }
 
 .no-gutter > [class*=col-] {
